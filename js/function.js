@@ -57,7 +57,7 @@ function startHeartAnimation() {
 		} else {
 			angle += 0.2;
 		}
-	}, 0);
+	}, 75);
 }
 
 // 模拟出打字效果
