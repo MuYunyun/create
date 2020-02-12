@@ -1,7 +1,7 @@
 let $window = $(window),garden;
 
 $(function () {
-    // setup garden
+  // setup garden
 	let $loveHeart = $("#loveHeart"),
 	    offsetX = $loveHeart.width() / 2,
 			offsetY = $loveHeart.height() / 2 - 55,

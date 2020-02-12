@@ -1,4 +1,4 @@
-function Vector(x, y) {  // 矢量
+function Vector(x, y) {
 	this.x = x;
 	this.y = y;
 };
@@ -56,7 +56,8 @@ Petal.prototype = {
 	}
 }
 
-function Bloom(p, r, c, pc, garden) {  // 花
+// flowers
+function Bloom(p, r, c, pc, garden) {
 	this.p = p;
 	this.r = r;
 	this.c = c;
@@ -116,10 +117,11 @@ Garden.prototype = {
 			}
 		}
 	},
-	createRandomBloom: function(x, y) { // 创建花朵
+	createRandomBloom: function(x, y) {
 		this.createBloom(x, y, Garden.randomInt(Garden.options.bloomRadius.min, Garden.options.bloomRadius.max), Garden.randomrgba(Garden.options.color.rmin, Garden.options.color.rmax, Garden.options.color.gmin, Garden.options.color.gmax, Garden.options.color.bmin, Garden.options.color.bmax, Garden.options.color.opacity), Garden.randomInt(Garden.options.petalCount.min, Garden.options.petalCount.max));
 	},
-	createBloom: function (x, y, r, c, pc) { // x,y,半径，颜色，花盘数量
+	// x,y,半径，颜色，花盘数量
+	createBloom: function (x, y, r, c, pc) {
 		new Bloom(new Vector(x, y), r, c, pc, this);
 	}
 }
